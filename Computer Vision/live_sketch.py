@@ -1,4 +1,3 @@
-import keras
 import matplotlib
 import numpy as np 
 import cv2
