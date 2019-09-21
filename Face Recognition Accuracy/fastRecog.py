@@ -4,35 +4,21 @@ import numpy as np
 
 video_capture = cv2.VideoCapture(0)
 
-imgAlban = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/alban.jpg')
-imgAlban_encoding = face_recognition.face_encodings(imgAlban)[0]
+imgMark = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/mark.jpg')
+imgMark_encoding = face_recognition.face_encodings(imgMark)[0]
 
 imgDurgesh = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/durgesh.PNG')
 imgDurgesh_encoding = face_recognition.face_encodings(imgDurgesh)[0]
 
-imgPrashant = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/Prashant.JPG')
-imgPrashant_encoding = face_recognition.face_encodings(imgPrashant)[0]
-
-imgAbhishek = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/Abhishek.JPG')
-imgAbhishek_encoding = face_recognition.face_encodings(imgAbhishek)[0]
-
-imgAnkita = face_recognition.load_image_file('/home/pi/Desktop/Face Recognition Accuracy/images/Ankita.JPG')
-imgAnkita_encoding = face_recognition.face_encodings(imgAnkita)[0]
-
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    imgAlban_encoding,
+    imgMark_encoding,
     imgDurgesh_encoding,
-    imgPrashant_encoding,
-    imgAbhishek_encoding,
-    imgAnkita_encoding
+    
 ]
 known_face_names = [
-    "Alban",
-    "Durgesh",
-    "Prashant",
-    "Abhishek",
-    "Ankita"
+    "Mark",
+    "Durgesh"
 ]
 
 # Initialize some variables
